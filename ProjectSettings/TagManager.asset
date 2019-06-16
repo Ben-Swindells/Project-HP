@@ -6,6 +6,7 @@ TagManager:
   tags:
   - breakable
   - Inventory
+  - enemy
   layers:
   - Default
   - TransparentFX
