@@ -5,16 +5,19 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
 
-    [SerializeField]
-    public static string playerName;
 
-    public static bool male;
-    public static bool female;
+    [SerializeField]  public static string playerName;
+    [SerializeField]  public static bool male;
+    [SerializeField]  public static bool female;
+
+    public int playerHP;
+    public int playerDPS;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(playerName);
+
     }
 
     // Update is called once per frame

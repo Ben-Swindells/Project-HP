@@ -7,12 +7,11 @@ public class MenuSystems : MonoBehaviour
     [Header("Keys")]
     public KeyCode inventorykey;
 
-    private GameObject getInventory;
+    public GameObject getInventory;
     private int check = 0;
     // Start is called before the first frame update
     void Start()
     {
-        getInventory = GameObject.FindGameObjectWithTag("Inventory");
         getInventory.SetActive(false);
     }
 

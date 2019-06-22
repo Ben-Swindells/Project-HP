@@ -18,6 +18,12 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+    }
+    public void EnemyDeath(GameObject enemyType)
+    {
+        if(health == 0)
+        {
+            Destroy(enemyType);
+        }
     }
 }
