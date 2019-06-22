@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 88845747}
   - component: {fileID: 88845746}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: Username Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -951,7 +951,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.23222105}
   m_AnchorMax: {x: 0.5, y: 0.23222105}
-  m_AnchoredPosition: {x: 0.0000081062, y: 2.100006}
+  m_AnchoredPosition: {x: 0.0000081062, y: 2.0999756}
   m_SizeDelta: {x: 172.29, y: 44.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &425843932
@@ -1129,7 +1129,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 459456812}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1684189821}
+        m_MethodName: FemaleButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, Unity.ugui, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &459456812
@@ -1409,7 +1420,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1684189820}
+      - m_Target: {fileID: 1684189821}
         m_MethodName: StartGame
         m_Mode: 5
         m_Arguments:
@@ -2679,6 +2690,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1684189819}
   - component: {fileID: 1684189820}
+  - component: {fileID: 1684189821}
+  - component: {fileID: 1684189822}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -2715,6 +2728,31 @@ MonoBehaviour:
   mainMenu: {fileID: 1495417150}
   characterMenu: {fileID: 1162982750}
   settingsMenu: {fileID: 940845403}
+--- !u!114 &1684189821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684189818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0df87d4f851a8b4f996b970c9a247ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerUsernameInput: {fileID: 88845746}
+--- !u!114 &1684189822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684189818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a117f208bbc68742a5d78d4e4b384d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1695816131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,7 +3050,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1789551949}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1684189821}
+        m_MethodName: MaleButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, Unity.ugui, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1789551949

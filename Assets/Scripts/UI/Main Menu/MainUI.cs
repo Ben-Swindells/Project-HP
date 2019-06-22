@@ -42,10 +42,7 @@ public class MainUI : MonoBehaviour
         characterMenu.SetActive(false);
         mainMenu.SetActive(false);
     }
-    public void StartGame(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
+ 
     public void QuitApplication()
     {
         Application.Quit();
