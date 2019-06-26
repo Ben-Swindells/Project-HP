@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class Log : Enemy
 {
-    public Transform target;
-    public float chaseRadius;
-    public float attackRadius;
-    public Transform basePosition;
-
     // Start is called before the first frame update
     void Start()
     {

@@ -7,12 +7,12 @@ public class PlayerHit : MonoBehaviour
     //Collect Scripts
     private Enemy enemy;
     private PlayerManager player;
-
+    private CombatSystem combatSystem;
     // Start is called before the first frame update
     void Start()
     {
-        enemy = GameObject.FindObjectOfType<Enemy>();
         player = GameObject.FindObjectOfType<PlayerManager>();
+
     }
 
     // Update is called once per frame
@@ -28,9 +28,8 @@ public class PlayerHit : MonoBehaviour
         }
         if(collision.CompareTag("enemy"))
         {
-            enemy.health = enemy.health - player.playerDPS;
-            enemy.EnemyDeath(collision.gameObject);
-            
+            collision.GetComponent<Enemy>().takeDamage(player.playerDPS);
+
         }
     }
 }
