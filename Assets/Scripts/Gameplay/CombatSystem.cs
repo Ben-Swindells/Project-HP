@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class CombatSystem : MonoBehaviour {
 
@@ -8,6 +10,8 @@ public class CombatSystem : MonoBehaviour {
     public PlayerManager player;
     public Enemy enemy;
     public GamplayUIManager gameplayUI;
+
+    private Image expBar;
 
 
     // Start is called before the first frame update
@@ -21,9 +25,4 @@ public class CombatSystem : MonoBehaviour {
     {
         
     }
-    public int  dealDamage(int health, int damage)
-    {
-        return health -= damage;
-    }
-
 }
